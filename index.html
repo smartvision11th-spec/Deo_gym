@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DEO FITNESS GYM - Gorakhpur's Premium Fitness Destination. Founded by Mr. Mukesh Singh. Transform Your Body. Transform Your Life." />
+  <meta name="keywords" content="DEO FITNESS GYM, Gorakhpur gym, fitness, premium gym, Mukesh Singh, weight training, personal training" />
+  <meta name="author" content="DEO FITNESS GYM" />
+  <meta property="og:title" content="DEO FITNESS GYM – Gorakhpur's Premium Fitness Destination" />
+  <meta property="og:description" content="Jahan Fitness Sirf Goal Nahi Lifestyle Hai. Join DEO FITNESS GYM today." />
+  <meta property="og:image" content="deohero.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>DEO FITNESS GYM | Gorakhpur's Premium Fitness Destination</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "DEO FITNESS GYM",
+    "description": "Gorakhpur's Premium Fitness Destination",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Darghiya, Nanda Nagar",
+      "addressLocality": "Gorakhpur",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "273008",
+      "addressCountry": "IN"
+    },
+    "telephone": "+917376704008",
+    "founder": { "@type": "Person", "name": "Mukesh Singh" },
+    "foundingDate": "2020"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- STICKY WATERMARK -->
+  <div class="watermark">DEO FITNESS GYM</div>
+
+  <!-- ===================== LOADER ===================== -->
+  <div class="loader" id="loader">
+    <div class="loader-bg"></div>
+    <div class="loader-content">
+      <div class="loader-img-wrap">
+        <img src="deoowner.jpg" alt="Mr. Mukesh Singh" class="loader-img" id="loaderImg" />
+        <div class="loader-img-glow"></div>
+      </div>
+      <div class="loader-text" id="loaderText">
+        <p class="typewriter" id="tw1"></p>
+        <p class="typewriter typewriter-sub" id="tw2"></p>
+        <p class="typewriter typewriter-label" id="tw3"></p>
+        <p class="typewriter typewriter-name" id="tw4"></p>
+        <p class="typewriter typewriter-tag" id="tw5"></p>
+      </div>
+    </div>
+    <div class="loader-particles" id="loaderParticles"></div>
+  </div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-deo">DEO FITNESS</span><span class="logo-gym">GYM</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about-owner" class="nav-link">About Owner</a></li>
+        <li><a href="#about-gym" class="nav-link">About Gym</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#team" class="nav-link">Team</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#gymtour" class="nav-link">Gym Tour</a></li>
+        <li><a href="#bmi" class="nav-link">BMI</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#blogs" class="nav-link">Blogs</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="deohero.jpg" alt="DEO FITNESS GYM Hero" class="hero-img" loading="eager" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="hero-content" id="heroContent">
+      <p class="hero-tagline reveal-up">GORAKHPUR'S PREMIUM FITNESS DESTINATION</p>
+      <h1 class="hero-title reveal-up">
+        <span class="hero-title-deo">DEO FITNESS</span><br />
+        <span class="hero-title-gym">GYM</span>
+      </h1>
+      <p class="hero-sub reveal-up">Jahan Fitness Sirf Goal Nahi <em>Lifestyle</em> Hai</p>
+      <div class="hero-buttons reveal-up">
+        <a href="#pricing" class="btn btn-primary liquid-btn">JOIN THE GYM</a>
+        <a href="#about-owner" class="btn btn-outline liquid-btn">EXPLORE THE GYM</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT OWNER ===================== -->
+  <section class="section about-owner" id="about-owner">
+    <div class="section-container">
+      <div class="section-label">FOUNDER & HEAD COACH</div>
+      <div class="about-owner-grid">
+        <div class="owner-img-wrap reveal-left">
+          <img src="deoowner.jpg" alt="Mr. Mukesh Singh" class="owner-img" loading="lazy" />
+          <div class="owner-img-frame"></div>
+          <div class="owner-badge">
+            <span class="badge-num">10+</span>
+            <span class="badge-text">Years Experience</span>
+          </div>
+        </div>
+        <div class="owner-info reveal-right">
+          <h2 class="section-title">Mr. <span class="accent">Mukesh Singh</span></h2>
+          <p class="owner-designation">Founder & Fitness Coach — DEO FITNESS GYM</p>
+          <div class="owner-divider"></div>
+          <p class="owner-bio">
+            Mr. Mukesh Singh is a visionary fitness coach with over a decade of experience transforming bodies, minds, and lives. Born and raised in Gorakhpur, he witnessed the lack of premium, result-driven fitness facilities and resolved to change that — founding DEO FITNESS GYM in 2020 with one bold mission: to make world-class fitness accessible to every individual in the region.
+          </p>
+          <p class="owner-bio">
+            A certified personal trainer and nutrition specialist, Mr. Singh's coaching philosophy is rooted in discipline, consistency, and scientific programming. He has personally guided hundreds of individuals — from beginners to competitive athletes — through transformative fitness journeys. His approach blends traditional strength fundamentals with modern training methodologies, ensuring that every member at DEO FITNESS GYM gets not just a workout, but a lifestyle upgrade.
+          </p>
+          <div class="owner-achievements">
+            <div class="achievement-item">
+              <span class="ach-icon">🏆</span>
+              <div>
+                <strong>500+ Transformations</strong>
+                <span>Successful member body transformations</span>
+              </div>
+            </div>
+            <div class="achievement-item">
+              <span class="ach-icon">🎓</span>
+              <div>
+                <strong>Certified Trainer</strong>
+                <span>Nationally certified fitness & nutrition coach</span>
+              </div>
+            </div>
+            <div class="achievement-item">
+              <span class="ach-icon">⚡</span>
+              <div>
+                <strong>Premier Coach</strong>
+                <span>Gorakhpur's most sought-after personal trainer</span>
+              </div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary liquid-btn mt-btn">CONTACT OWNER</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT GYM ===================== -->
+  <section class="section about-gym" id="about-gym">
+    <div class="section-container">
+      <div class="section-label">EST. 2020</div>
+      <div class="gym-sign-wrap reveal-up">
+        <div class="gym-sign">
+          <div class="gym-sign-chain left-chain"><span></span><span></span><span></span></div>
+          <div class="gym-sign-chain right-chain"><span></span><span></span><span></span></div>
+          <div class="gym-sign-board">
+            <h2 class="gym-sign-title">DEO <span>FITNESS</span> GYM</h2>
+            <p class="gym-sign-sub">Gorakhpur's Premier Fitness Facility</p>
+          </div>
+        </div>
+      </div>
+      <p class="gym-desc reveal-up">
+        Founded in 2020, DEO FITNESS GYM has rapidly grown to become one of the leading fitness destinations in Gorakhpur. We combine state-of-the-art equipment, certified trainers, and a culture of excellence to deliver a premium fitness experience like no other in the region.
+      </p>
+      <div class="feature-cards">
+        <div class="feature-card reveal-up" data-delay="0">
+          <div class="feature-icon">🏅</div>
+          <h3>Certified Trainers</h3>
+          <p>Our team of nationally certified trainers creates personalised programs tailored to your unique goals — whether fat loss, muscle gain, or peak performance.</p>
+        </div>
+        <div class="feature-card reveal-up" data-delay="100">
+          <div class="feature-icon">⚙️</div>
+          <h3>Modern Equipment</h3>
+          <p>Equipped with the latest cardio machines, free weights, resistance systems, and functional training zones — everything you need under one roof.</p>
+        </div>
+        <div class="feature-card reveal-up" data-delay="200">
+          <div class="feature-icon">🕓</div>
+          <h3>Gym Timing</h3>
+          <p><strong>Mon – Sat:</strong> 4:00 AM – 10:00 AM<br /><br /><strong>Sunday:</strong> Closed</p>
+        </div>
+        <div class="feature-card reveal-up" data-delay="300">
+          <div class="feature-icon">🎯</div>
+          <h3>Personal Guidance</h3>
+          <p>Every member receives one-on-one guidance from our expert coaches — covering workout plans, diet charts, and consistent progress tracking.</p>
+        </div>
+      </div>
+      <div class="text-center mt-btn">
+        <a href="#services" class="btn btn-primary liquid-btn">EXPLORE SERVICES</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS ===================== -->
+  <section class="stats-section">
+    <div class="stats-container">
+      <div class="stat-item reveal-up">
+        <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+        <p>Members Transformed</p>
+      </div>
+      <div class="stat-item reveal-up" data-delay="100">
+        <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+        <p>Years of Experience</p>
+      </div>
+      <div class="stat-item reveal-up" data-delay="200">
+        <span class="stat-number" data-target="8">0</span><span class="stat-plus"></span>
+        <p>Expert Services</p>
+      </div>
+      <div class="stat-item reveal-up" data-delay="300">
+        <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+        <p>Satisfaction Guaranteed</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="section services" id="services">
+    <div class="section-container">
+      <div class="section-label">WHAT WE OFFER</div>
+      <h2 class="section-title text-center reveal-up">Our <span class="accent">Premium</span> Services</h2>
+      <div class="services-grid">
+        <div class="service-card reveal-up" data-delay="0">
+          <div class="service-img-wrap">
+            <div class="service-img-placeholder" style="--c1:#FFD700;--c2:#FF6B00;">
+              <span class="service-emoji">🏃</span>
+            </div>
+          </div>
+          <h3>Adult Sports</h3>
+          <p>Unleash your competitive spirit with our structured adult sports program. Designed to improve agility, endurance, and team coordination, our sports training integrates fitness with the thrill of athletic performance. Perfect for those who want fitness to feel like play.</p>
+        </div>
+        <div class="service-card reveal-up" data-delay="50">
+          <div class="service-img-wrap">
+            <div class="service-img-placeholder" style="--c1:#00E5FF;--c2:#0066FF;">
+              <span class="service-emoji">🤸</span>
+            </div>
+          </div>
+          <h3>Aerobics</h3>
+          <p>High-energy aerobics sessions designed to torch calories, improve cardiovascular health, and boost your mood. Guided by certified instructors, our aerobics classes blend rhythm, movement, and science to deliver maximum fat-burning results in every session.</p>
+        </div>
+        <div class="service-card reveal-up" data-delay="100">
+          <div class="service-img-wrap">
+            <div class="service-img-placeholder" style="--c1:#FF6B00;--c2:#FFD700;">
+              <span class="service-emoji">🚴</span>
+            </div>
+          </div>
+          <h3>Cycling</h3>
+          <p>Power through intense indoor cycling sessions that target your lower body, elevate your heart rate, and build incredible stamina. Our cycling program is suitable for all fitness levels and offers a low-impact, high-reward workout for legs, core, and cardiovascular system.</p>
+        </div>
+        <div class="service-card reveal-up" data-delay="150">
+          <div class="service-img-wrap">
+            <div class="service-img-placeholder" style="--c1:#FF00AA;--c2:#FFD700;">
+              <span class="service-emoji">💃</span>
+            </div>
+          </div>
+          <h3>Dance Fitness</h3>
+          <p>Experience the joy of movement with our dance fitness classes. Combining popular dance styles with structured fitness routines, this program helps you burn calories while having the time of your life. Ideal for those who believe fitness should be fun and expressive.</p>
+        </div>
+        <div class="service-card reveal-up" data-delay="200">
+          <div class="service-img-wrap">
+            <div class="service-img-placeholder" style="--c1:#00E5FF;--c2:#FF6B00;">
+              <span class="service-emoji">🏋️</span>
+            </div>
+          </div>
+          <h3>Personal Training</h3>
+          <p>Work one-on-one with our certified trainers to achieve your goals faster. Each personal training session is custom-designed around your body type, fitness level, and objectives — ensuring maximum efficiency, safety, and consistent progress every single session.</p>
+        </div>
+        <div class="service-card reveal-up" data-delay="250">
+          <div class="service-img-wrap">
+            <div class="service-img-placeholder" style="--c1:#FFD700;--c2:#00E5FF;">
+              <span class="service-emoji">🎯</span>
+            </div>
+          </div>
+          <h3>Private Lessons</h3>
+          <p>Our exclusive private lesson program offers focused, distraction-free training for individuals who prefer a private, boutique fitness experience. Ideal for beginners learning fundamentals or advanced athletes refining technique under elite supervision.</p>
+        </div>
+        <div class="service-card reveal-up" data-delay="300">
+          <div class="service-img-wrap">
+            <div class="service-img-placeholder" style="--c1:#FF6B00;--c2:#FF0000;">
+              <span class="service-emoji">💪</span>
+            </div>
+          </div>
+          <h3>Weight Training</h3>
+          <p>Build the physique you've always dreamed of with our scientifically programmed weight training regimen. Whether your goal is hypertrophy, strength, or toning, our trainers design progressive overload programs that ensure your muscles are always challenged and growing.</p>
+        </div>
+        <div class="service-card reveal-up" data-delay="350">
+          <div class="service-img-wrap">
+            <div class="service-img-placeholder" style="--c1:#00E5FF;--c2:#9B00FF;">
+              <span class="service-emoji">🤼</span>
+            </div>
+          </div>
+          <h3>Arm Wrestling</h3>
+          <p>Sharpen your grip strength, forearm power, and competitive edge with our dedicated arm wrestling training. Guided by experienced coaches, this unique program combines specialized exercises, technique drills, and competitive sparring to develop true upper-body dominance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TEAM ===================== -->
+  <section class="section team" id="team">
+    <div class="section-container">
+      <div class="section-label">THE EXPERTS</div>
+      <h2 class="section-title text-center reveal-up">Meet Our <span class="accent">Team</span></h2>
+      <div class="team-carousel-wrap">
+        <div class="team-carousel" id="teamCarousel">
+          <div class="team-card glass-card">
+            <div class="team-img-wrap">
+              <div class="team-img-placeholder male">
+                <span>👨‍💼</span>
+              </div>
+            </div>
+            <h3>Rajesh Kumar</h3>
+            <p class="team-role">Strength & Conditioning Coach</p>
+            <p class="team-exp">8+ Years Experience</p>
+            <div class="team-tags">
+              <span>Weight Training</span>
+              <span>Powerlifting</span>
+            </div>
+          </div>
+          <div class="team-card glass-card">
+            <div class="team-img-wrap">
+              <div class="team-img-placeholder male2">
+                <span>👨‍🏫</span>
+              </div>
+            </div>
+            <h3>Arjun Sharma</h3>
+            <p class="team-role">Cardio & Sports Trainer</p>
+            <p class="team-exp">6+ Years Experience</p>
+            <div class="team-tags">
+              <span>Aerobics</span>
+              <span>Cycling</span>
+            </div>
+          </div>
+          <div class="team-card glass-card">
+            <div class="team-img-wrap">
+              <div class="team-img-placeholder female">
+                <span>👩‍🏫</span>
+              </div>
+            </div>
+            <h3>Priya Mishra</h3>
+            <p class="team-role">Dance Fitness & Aerobics Expert</p>
+            <p class="team-exp">5+ Years Experience</p>
+            <div class="team-tags">
+              <span>Dance Fitness</span>
+              <span>Zumba</span>
+            </div>
+          </div>
+          <div class="team-card glass-card">
+            <div class="team-img-wrap">
+              <div class="team-img-placeholder male">
+                <span>👨‍💼</span>
+              </div>
+            </div>
+            <h3>Rajesh Kumar</h3>
+            <p class="team-role">Strength & Conditioning Coach</p>
+            <p class="team-exp">8+ Years Experience</p>
+            <div class="team-tags">
+              <span>Weight Training</span>
+              <span>Powerlifting</span>
+            </div>
+          </div>
+        </div>
+        <button class="team-btn team-prev" id="teamPrev" aria-label="Previous">&#8592;</button>
+        <button class="team-btn team-next" id="teamNext" aria-label="Next">&#8594;</button>
+      </div>
+      <div class="team-dots" id="teamDots"></div>
+    </div>
+  </section>
+
+  <!-- ===================== PRICING ===================== -->
+  <section class="section pricing" id="pricing">
+    <div class="section-container">
+      <div class="section-label">MEMBERSHIP PLANS</div>
+      <h2 class="section-title text-center reveal-up">Choose Your <span class="accent">Plan</span></h2>
+      <div class="pricing-grid">
+        <div class="pricing-card glass-card reveal-up" data-delay="0">
+          <div class="pricing-badge">STARTER</div>
+          <div class="pricing-price">
+            <span class="currency">₹</span>499
+            <span class="period">/ Month</span>
+          </div>
+          <ul class="pricing-features">
+            <li>✅ Gym Access (Mon–Sat)</li>
+            <li>✅ Basic Equipment Use</li>
+            <li>✅ Group Fitness Classes</li>
+            <li>✅ Locker Facility</li>
+            <li>✅ Basic Fitness Assessment</li>
+            <li>❌ Personal Training</li>
+            <li>❌ Diet Plan</li>
+          </ul>
+          <button class="btn btn-outline liquid-btn choose-plan" data-plan="Monthly – ₹499">CHOOSE PLAN</button>
+        </div>
+        <div class="pricing-card glass-card reveal-up best-value" data-delay="100">
+          <div class="pricing-badge best">⭐ BEST VALUE</div>
+          <div class="pricing-price">
+            <span class="currency">₹</span>4999
+            <span class="period">/ Year</span>
+          </div>
+          <ul class="pricing-features">
+            <li>✅ Unlimited Gym Access</li>
+            <li>✅ All Equipment Access</li>
+            <li>✅ All Group Classes</li>
+            <li>✅ Personal Training (4/month)</li>
+            <li>✅ Custom Diet Plan</li>
+            <li>✅ Progress Tracking</li>
+            <li>✅ Priority Support</li>
+          </ul>
+          <button class="btn btn-primary liquid-btn choose-plan" data-plan="Yearly – ₹4999">CHOOSE PLAN</button>
+        </div>
+        <div class="pricing-card glass-card reveal-up" data-delay="200">
+          <div class="pricing-badge">QUARTERLY</div>
+          <div class="pricing-price">
+            <span class="currency">₹</span>1299
+            <span class="period">/ Quarter</span>
+          </div>
+          <ul class="pricing-features">
+            <li>✅ Full Gym Access (Mon–Sat)</li>
+            <li>✅ All Equipment Access</li>
+            <li>✅ Group Fitness Classes</li>
+            <li>✅ Locker + Towel</li>
+            <li>✅ Monthly Fitness Assessment</li>
+            <li>✅ Nutrition Guidance</li>
+            <li>❌ Personal Training</li>
+          </ul>
+          <button class="btn btn-outline liquid-btn choose-plan" data-plan="Quarterly – ₹1299">CHOOSE PLAN</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="section gallery" id="gallery">
+    <div class="section-container">
+      <div class="section-label">VISUAL JOURNEY</div>
+      <h2 class="section-title text-center reveal-up">Gallery</h2>
+      <div class="masonry-gallery" id="masonryGallery">
+        <div class="gallery-item reveal-up" data-delay="0">
+          <img src="deogallery1.jpg" alt="DEO FITNESS GYM Gallery 1" loading="lazy" />
+          <div class="gallery-overlay"><span>+</span></div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="50">
+          <img src="deogallery2.jpg" alt="DEO FITNESS GYM Gallery 2" loading="lazy" />
+          <div class="gallery-overlay"><span>+</span></div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="100">
+          <img src="deogallery3.jpg" alt="DEO FITNESS GYM Gallery 3" loading="lazy" />
+          <div class="gallery-overlay"><span>+</span></div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="150">
+          <img src="deogallery4.jpg" alt="DEO FITNESS GYM Gallery 4" loading="lazy" />
+          <div class="gallery-overlay"><span>+</span></div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="200">
+          <img src="deogallery5.jpg" alt="DEO FITNESS GYM Gallery 5" loading="lazy" />
+          <div class="gallery-overlay"><span>+</span></div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="250">
+          <img src="deogallery6.jpg" alt="DEO FITNESS GYM Gallery 6" loading="lazy" />
+          <div class="gallery-overlay"><span>+</span></div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="300">
+          <img src="deogallery7.jpg" alt="DEO FITNESS GYM Gallery 7" loading="lazy" />
+          <div class="gallery-overlay"><span>+</span></div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="350">
+          <img src="deogallery8.jpg" alt="DEO FITNESS GYM Gallery 8" loading="lazy" />
+          <div class="gallery-overlay"><span>+</span></div>
+        </div>
+      </div>
+    </div>
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose">✕</button>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&#8592;</button>
+      <button class="lightbox-nav lightbox-next" id="lightboxNext">&#8594;</button>
+      <img src="" alt="" id="lightboxImg" />
+    </div>
+  </section>
+
+  <!-- ===================== GYM TOUR VIDEO ===================== -->
+  <section class="section gymtour" id="gymtour">
+    <div class="section-container">
+      <div class="section-label">TAKE A TOUR</div>
+      <h2 class="section-title text-center reveal-up">Experience <span class="accent">DEO FITNESS GYM</span></h2>
+      <div class="video-container reveal-up">
+        <div class="video-overlay-cinematic"></div>
+        <video id="gymVideo" autoplay muted loop playsinline controls>
+          <source src="deogymtour.mp4" type="video/mp4" />
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MEMBERSHIP FORM ===================== -->
+  <section class="section membership-form" id="join">
+    <div class="section-container">
+      <div class="section-label">BECOME A MEMBER</div>
+      <h2 class="section-title text-center reveal-up">Join <span class="accent">DEO FITNESS GYM</span> Today</h2>
+      <div class="form-card glass-card reveal-up">
+        <div class="form-group">
+          <label for="memberName">Full Name *</label>
+          <input type="text" id="memberName" placeholder="Enter your full name" required />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="memberGender">Gender *</label>
+            <select id="memberGender" required>
+              <option value="">Select Gender</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="memberAge">Age *</label>
+            <input type="number" id="memberAge" placeholder="Your age" min="10" max="80" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="memberMobile">Mobile Number *</label>
+          <input type="tel" id="memberMobile" placeholder="+91 XXXXX XXXXX" required />
+        </div>
+        <div class="form-group">
+          <label for="memberPlan">Choose Plan *</label>
+          <select id="memberPlan" required>
+            <option value="">Select a Plan</option>
+            <option value="Monthly – ₹499">Monthly – ₹499</option>
+            <option value="Quarterly – ₹1299">Quarterly – ₹1299</option>
+            <option value="Yearly – ₹4999">Yearly – ₹4999 (Best Value)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="memberService">Services Interested In</label>
+          <select id="memberService">
+            <option value="">Select Service (Optional)</option>
+            <option>Adult Sports</option>
+            <option>Aerobics</option>
+            <option>Cycling</option>
+            <option>Dance Fitness</option>
+            <option>Personal Training</option>
+            <option>Private Lessons</option>
+            <option>Weight Training</option>
+            <option>Arm Wrestling</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="memberDate">Joining Date *</label>
+          <input type="date" id="memberDate" required />
+        </div>
+        <div class="form-group">
+          <label for="memberMsg">Additional Message</label>
+          <textarea id="memberMsg" rows="3" placeholder="Any special requirements or queries..."></textarea>
+        </div>
+        <button class="btn btn-primary liquid-btn full-btn" id="submitForm">BE A MEMBER</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Modal -->
+  <div class="success-modal" id="successModal">
+    <div class="success-modal-inner">
+      <div class="success-icon">🎉</div>
+      <h2>Congratulations!</h2>
+      <p id="successText">You are now a DEO FITNESS GYM Member. Our team will contact you shortly.</p>
+      <button class="btn btn-primary liquid-btn" id="closeModal">AWESOME!</button>
+    </div>
+  </div>
+
+  <!-- ===================== GOOGLE MAPS ===================== -->
+  <section class="section map-section" id="location">
+    <div class="section-container">
+      <div class="section-label">FIND US</div>
+      <h2 class="section-title text-center reveal-up">Our <span class="accent">Location</span></h2>
+      <div class="location-grid reveal-up">
+        <div class="location-info glass-card">
+          <h3>DEO FITNESS GYM</h3>
+          <div class="loc-detail">
+            <span class="loc-icon">📍</span>
+            <p>Darghiya, Nanda Nagar,<br />Gorakhpur, Uttar Pradesh – 273008</p>
+          </div>
+          <div class="loc-detail">
+            <span class="loc-icon">📞</span>
+            <p><a href="tel:7376704008">73767 04008</a></p>
+          </div>
+          <div class="loc-detail">
+            <span class="loc-icon">🕓</span>
+            <p>Mon–Sat: 4:00 AM – 10:00 AM<br />Sunday: Closed</p>
+          </div>
+          <div class="loc-detail">
+            <span class="loc-icon">📅</span>
+            <p>Founded in 2020</p>
+          </div>
+        </div>
+        <div class="map-frame">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7125.588037908785!2d83.4295318!3d26.7509485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39915b6ae38436b3%3A0x2fcbd0a0ab6bb74!2sDEO%20FITNESS%20GYM!5e0!3m2!1sen!2sin!4v1780249055027!5m2!1sen!2sin"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="DEO FITNESS GYM Location">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="section testimonials" id="testimonials">
+    <div class="section-container">
+      <div class="section-label">WHAT THEY SAY</div>
+      <h2 class="section-title text-center reveal-up">Member <span class="accent">Reviews</span></h2>
+      <div class="testimonial-wrap">
+        <div class="testimonial-track" id="testimonialTrack">
+          <div class="testimonial-card glass-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"DEO FITNESS GYM completely changed my life. Mr. Mukesh Singh's guidance and the professional team here pushed me beyond limits I thought impossible. Within 6 months, I lost 18 kg and gained confidence I never had. This gym isn't just a place to workout — it's a community."</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">FI</div>
+              <div><strong>Force India</strong><span>Member since 2021</span></div>
+            </div>
+          </div>
+          <div class="testimonial-card glass-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Joining DEO FITNESS GYM was the best decision I ever made. The facilities are top-notch, the trainers are incredibly knowledgeable, and the environment keeps you motivated every single day. Tarwind Nishad from DEO FITNESS GYM to every fitness seeker in Gorakhpur — this is THE place."</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">TN</div>
+              <div><strong>Tarwind Nishad</strong><span>Member since 2022</span></div>
+            </div>
+          </div>
+          <div class="testimonial-card glass-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"I've trained at many gyms across Gorakhpur, but DEO FITNESS GYM stands in a league of its own. The premium equipment, the personalised attention from coaches, and the discipline ingrained in every session here is unmatched. Highly recommended to anyone serious about fitness."</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">MS</div>
+              <div><strong>Mohd. Saifi</strong><span>Member since 2022</span></div>
+            </div>
+          </div>
+          <div class="testimonial-card glass-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Mr. Mukesh Singh's expertise in fitness coaching is truly exceptional. He understands your body type, creates a custom program, and holds you accountable to results. Thanks to DEO FITNESS GYM, I've achieved more in 4 months than in the previous 2 years at other gyms combined."</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">RP</div>
+              <div><strong>Ram Harsh Prasad</strong><span>Member since 2023</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-controls">
+          <button class="team-btn" id="testPrev" aria-label="Previous Review">&#8592;</button>
+          <button class="team-btn" id="testNext" aria-label="Next Review">&#8594;</button>
+        </div>
+        <div class="testimonial-dots" id="testimonialDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BLOGS ===================== -->
+  <section class="section blogs" id="blogs">
+    <div class="section-container">
+      <div class="section-label">KNOWLEDGE HUB</div>
+      <h2 class="section-title text-center reveal-up">Latest <span class="accent">Blogs</span></h2>
+      <div class="blog-grid">
+        <div class="blog-card glass-card reveal-up" data-delay="0">
+          <div class="blog-img-placeholder" style="--bc1:#FFD700;--bc2:#FF6B00;">
+            <span>🥗</span>
+          </div>
+          <div class="blog-content">
+            <span class="blog-date">May 15, 2025</span>
+            <h3>Ultimate Diet Plan Guide for Gym Beginners</h3>
+            <p>A well-structured diet plan is the foundation of every transformation. Discover the science behind macros, meal timing, hydration, and supplementation to maximise your results at DEO FITNESS GYM...</p>
+            <a href="#" class="blog-read-more">Read More →</a>
+          </div>
+        </div>
+        <div class="blog-card glass-card reveal-up" data-delay="100">
+          <div class="blog-img-placeholder" style="--bc1:#00E5FF;--bc2:#9B00FF;">
+            <span>💪</span>
+          </div>
+          <div class="blog-content">
+            <span class="blog-date">April 28, 2025</span>
+            <h3>How a Consistent Workout Routine Transforms Your Life</h3>
+            <p>Beyond the physical — consistent training reshapes your mindset, boosts confidence, enhances discipline, and builds resilience. Learn how gym culture at DEO FITNESS GYM is changing lives in Gorakhpur...</p>
+            <a href="#" class="blog-read-more">Read More →</a>
+          </div>
+        </div>
+        <div class="blog-card glass-card reveal-up" data-delay="200">
+          <div class="blog-img-placeholder" style="--bc1:#FF6B00;--bc2:#FFD700;">
+            <span>🏆</span>
+          </div>
+          <div class="blog-content">
+            <span class="blog-date">March 10, 2025</span>
+            <h3>Why DEO FITNESS GYM Is Among the Best Gyms in Gorakhpur</h3>
+            <p>From cutting-edge equipment and certified trainers to a culture of excellence and personalised programming — discover what sets DEO FITNESS GYM apart and makes it Gorakhpur's most trusted fitness destination...</p>
+            <a href="#" class="blog-read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOCIAL MEDIA ===================== -->
+  <section class="section social-section">
+    <div class="section-container">
+      <div class="section-label">CONNECT WITH US</div>
+      <h2 class="section-title text-center reveal-up">Follow <span class="accent">DEO FITNESS GYM</span></h2>
+      <div class="social-grid">
+        <a href="#" class="social-card glass-card reveal-up insta-card" data-delay="0">
+          <div class="social-icon">📸</div>
+          <h3>Instagram</h3>
+          <p>Follow our daily transformations, workout videos, and fitness tips.</p>
+          <span class="social-handle">@deogymgorakhpur</span>
+        </a>
+        <a href="#" class="social-card glass-card reveal-up fb-card" data-delay="100">
+          <div class="social-icon">👍</div>
+          <h3>Facebook</h3>
+          <p>Join our fitness community, events, and latest gym updates.</p>
+          <span class="social-handle">DEO FITNESS GYM Gorakhpur</span>
+        </a>
+        <a href="#" class="social-card glass-card reveal-up yt-card" data-delay="200">
+          <div class="social-icon">▶️</div>
+          <h3>YouTube</h3>
+          <p>Watch workout tutorials, member stories, and gym tours.</p>
+          <span class="social-handle">DEO FITNESS GYM Official</span>
+        </a>
+        <a href="https://wa.me/917376704008" class="social-card glass-card reveal-up wa-card" data-delay="300">
+          <div class="social-icon">💬</div>
+          <h3>WhatsApp</h3>
+          <p>Chat with us directly for membership queries and bookings.</p>
+          <span class="social-handle">73767 04008</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BMI CALCULATOR ===================== -->
+  <section class="section bmi-section" id="bmi">
+    <div class="section-container">
+      <div class="section-label">HEALTH TOOL</div>
+      <h2 class="section-title text-center reveal-up">BMI <span class="accent">Calculator</span></h2>
+      <div class="bmi-card glass-card reveal-up">
+        <div class="bmi-inputs">
+          <div class="form-group">
+            <label for="bmiHeight">Height (cm)</label>
+            <input type="number" id="bmiHeight" placeholder="e.g. 170" min="100" max="250" />
+          </div>
+          <div class="form-group">
+            <label for="bmiWeight">Weight (kg)</label>
+            <input type="number" id="bmiWeight" placeholder="e.g. 70" min="30" max="300" />
+          </div>
+          <button class="btn btn-primary liquid-btn full-btn" id="calcBMI">CALCULATE BMI</button>
+        </div>
+        <div class="bmi-result" id="bmiResult" style="display:none;">
+          <div class="bmi-score-wrap">
+            <div class="bmi-ring" id="bmiRing">
+              <span class="bmi-value" id="bmiValue">0</span>
+            </div>
+            <div class="bmi-label" id="bmiLabel"></div>
+          </div>
+          <p class="bmi-suggestion" id="bmiSuggestion"></p>
+          <a href="#pricing" class="btn btn-primary liquid-btn">JOIN THE GYM</a>
+        </div>
+        <div class="bmi-scale">
+          <div class="bmi-scale-bar">
+            <div class="bmi-scale-segment underweight">Underweight<br/>&lt;18.5</div>
+            <div class="bmi-scale-segment normal">Normal<br/>18.5–24.9</div>
+            <div class="bmi-scale-segment overweight">Overweight<br/>25–29.9</div>
+            <div class="bmi-scale-segment obese">Obese<br/>&gt;30</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="contact">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo"><span class="logo-deo">DEO FITNESS</span><span class="logo-gym">GYM</span></div>
+        <p>Gorakhpur's Premier Fitness Destination. Transform Your Body. Transform Your Life.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="Facebook">👍</a>
+          <a href="#" aria-label="YouTube">▶️</a>
+          <a href="https://wa.me/917376704008" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about-owner">About Owner</a></li>
+          <li><a href="#about-gym">About Gym</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#join">Join Now</a></li>
+          <li><a href="#bmi">BMI Calculator</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+          <li><a href="#gymtour">Gym Tour</a></li>
+          <li><a href="#location">Find Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📍 Darghiya, Nanda Nagar,<br />Gorakhpur, UP – 273008</p>
+        <p>📞 <a href="tel:7376704008">73767 04008</a></p>
+        <p>🕓 Mon–Sat: 4 AM – 10 AM</p>
+        <p>📅 Founded 2020</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 DEO FITNESS GYM. All Rights Reserved. | Designed with ❤️ for Gorakhpur's Fitness Community</p>
+    </div>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
